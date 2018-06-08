@@ -62,8 +62,15 @@
 
 	#loading_page {
 		height: 80vmin;
-		background-image: linear-gradient(#09323b, #f0f2dd);
+		padding-top: 200px;
+		background-size: cover;
+		background-image: url("./loading_page.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
 		color: white;
+		text-align:center;
+		font-size: 2em;
+		text-shadow: 0 0 4px black;
 		padding: 5vmin;
 	}
 
