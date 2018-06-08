@@ -12,6 +12,10 @@
 		list-style: decimal outside;
 	}
 
+	#navigation {
+		float: right;
+	}
+
 	#navlist {
 		list-style-type: none;
 		position: fixed;
@@ -24,9 +28,22 @@
 		background-color: white;
 	}
 
+	.navlist .icon {
+    display: none;
+	}
+
+	#logo {
+		position: fixed;
+		z-index: 1;
+		left: 5vmin;
+		top: 3.5vmin;
+		margin: 0;
+		padding: 0;
+	}
+
 	#navlist li {
 		margin: 0;
-		float: left;		/* each item in navigation bar floats left to create horizontal bar */
+		float: right;		/* each item in navigation bar floats left to create horizontal bar */
 		text-align: center;
 	}
 
@@ -131,20 +148,25 @@
 		background-color: white;
 	}
 
-	#navlist a {
-		font-weight: bold;
-		display: block;
-		width: 100%;
-		color: #595959;
-		padding: 8px 16px;
-		text-decoration: none;
-		border-bottom: 0.5px solid #555;
+	#navlist a:not(:first-child) {
+		display: none;
 	}
 
-	#navlist a:active {
-		background-color: LightGray;
-		color: white;
-		font-weight: bold;
+	.navlist a.icon {
+		float: right;
+		display: block;
+	}
+
+	.navlist.responsive {position: relative;}
+	.navlist.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navlist.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
 	}
 
 	#FAQ_button, #contact_button {
