@@ -1,0 +1,163 @@
+@media only screen and (min-width: 481px){
+	body {
+		font-family: Arial;
+		line-height: 1.2;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	ol {
+		list-style: decimal outside;
+	}
+
+	#navlist {
+		list-style-type: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 100%;
+		background-color: white;
+	}
+
+	#navlist li {
+		margin: 0;
+		float: left;		/* each item in navigation bar floats left to create horizontal bar */
+		text-align: center;
+	}
+
+	#navlist li a {
+		display: block;
+		padding: 20px 21px;
+	}
+
+	nav {
+		width: 100%;
+		letter-spacing: 3px;
+	}
+
+	nav a:link, a:visited {
+		color: #404040;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+	   background-color: gray;
+	   color: white;
+	}
+
+	nav a:active {
+		color: white;
+		text-decoration: none;
+		background-color: LightGray;
+	}
+
+	.content {
+		margin-top: 10vmin;
+	}
+
+	#loading_page {
+		height: 80vmin;
+		background-image: linear-gradient(#09323b, #f0f2dd);
+		color: white;
+		padding: 5vmin;
+	}
+
+	#FAQ_button, #contact_button {
+		text-align: center;
+	}
+
+	#FAQ_button {
+		background-color: LightGray;
+	}
+
+	#contact_button {
+		background-color: gray;
+	}
+
+	.footer_column {
+		float: left;
+		width: 48.5%;
+	}
+
+	footer {
+		padding-bottom: 200px;
+	}
+
+	#social, #newsletter {
+		height: 10vmin;
+		text-align: center;
+		padding-top: 10vmin;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	h2 {
+		text-align: center;
+	}
+
+	body {
+		font-family: Arial;
+		line-height: 1.2;
+	}
+
+	.content {
+		width: 86%;
+		padding-left: 12%;
+	}
+
+/* CHANGE THE REST! (MENU + NEWSLETTER) */
+
+	#navlist {
+		line-height: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 100%;
+		background-color: white;
+	}
+
+	#navlist a {
+		font-weight: bold;
+		display: block;
+		width: 100%;
+		color: #595959;
+		padding: 8px 16px;
+		text-decoration: none;
+		border-bottom: 0.5px solid #555;
+	}
+
+	#navlist a:active {
+		background-color: LightGray;
+		color: white;
+		font-weight: bold;
+	}
+
+	#FAQ_button, #contact_button {
+		line-height: 120%;
+		height: 70vmin;
+		width:100%;
+		height: 120%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-bottom: 10%;
+		font-size: 100%;
+		font-weight: normal;
+	}
+
+	#FAQ {
+		background-color: #99c2ff;
+	}
+
+	#contact_button {
+		background-color: #cc99ff;
+	}
+
+}
