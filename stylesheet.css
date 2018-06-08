@@ -1,126 +1,158 @@
-@media only screen and (min-width: 481px){
-	body {
-		font-family: Arial;
-		line-height: 1.2;
-	}
+/***********************************************/
+/***************** DESKTOP *********************/
+/***********************************************/
 
-	h2 {
-		text-align: center;
-	}
 
-	ol {
-		list-style: decimal outside;
-	}
-
-	#navigation {
-		float: right;
-	}
-
-	#navlist {
-		list-style-type: none;
-		position: fixed;
-		left: 0;
-		top: 0;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		width: 100%;
-		background-color: white;
-	}
-
-	.navlist .icon {
-    display: none;
-	}
-
-	#logo {
-		position: fixed;
-		z-index: 1;
-		left: 5vmin;
-		top: 3.5vmin;
-		margin: 0;
-		padding: 0;
-	}
-
-	#navlist li {
-		margin: 0;
-		float: right;		/* each item in navigation bar floats left to create horizontal bar */
-		text-align: center;
-	}
-
-	#navlist li a {
-		display: block;
-		padding: 20px 21px;
-	}
-
-	nav {
-		width: 100%;
-		letter-spacing: 3px;
-	}
-
-	nav a:link, a:visited {
-		color: #404040;
-		text-decoration: none;
-	}
-
-	nav a:hover {
-	   background-color: gray;
-	   color: white;
-	}
-
-	nav a:active {
-		color: white;
-		text-decoration: none;
-		background-color: LightGray;
-	}
-
-	.content {
-		margin-top: 10vmin;
-	}
-
-	#loading_page {
-		height: 80vmin;
-		padding-top: 200px;
-		background-size: cover;
-		background-image: url("./loading_page.jpg");
-    background-repeat: no-repeat;
-    background-position: left top;
-		color: white;
-		text-align:center;
-		font-size: 2em;
-		text-shadow: 0 0 4px black;
-		padding: 5vmin;
-	}
-
-	#FAQ_button, #contact_button {
-		text-align: center;
-	}
-
-	#FAQ_button {
-		background-color: LightGray;
-	}
-
-	#contact_button {
-		background-color: gray;
-	}
-
-	.footer_column {
-		float: left;
-		width: 50%;
-	}
-
-	footer {
-		padding-bottom: 200px;
-	}
-
-	#social, #newsletter {
-		height: 10vmin;
-		text-align: center;
-		padding-top: 10vmin;
-	}
-
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	line-height: 1.2;
 }
 
-@media only screen and (max-width: 480px) {
+h2 {
+	text-align: center;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+#logo {
+	position: fixed;
+	z-index: 1;
+	left: 5vmin;
+	top: 2.3vmin;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	color: #404040;
+	text-decoration: none;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: right;
+	display: block;
+	color: #404040;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+/* Add a dark background on topnav links on hover */
+.topnav a:hover {
+	background-color: #555;
+	color: white;
+}
+
+#loading_page {
+	height: 80vmin;
+	padding-top: 200px;
+	background-size: cover;
+	background-image: url("./loading_page.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+	color: white;
+	text-align:center;
+	font-size: 2em;
+	text-shadow: 0 0 4px black;
+	padding: 5vmin;
+}
+
+#FAQ_button, #contact_button {
+	text-align: center;
+}
+
+#FAQ_button {
+	background-color: LightGray;
+}
+
+#contact_button {
+	background-color: gray;
+}
+
+.footer_column {
+	float: left;
+	width: 50%;
+}
+
+footer {
+	padding-bottom: 200px;
+}
+
+#social, #newsletter {
+	height: 10vmin;
+	text-align: center;
+	padding-top: 10vmin;
+}
+
+
+
+/***********************************************/
+/****************** MOBILE *********************/
+/***********************************************/
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+	.topnav {
+		background-color: #333;
+	}
+
+	.topnav a {
+		color: #fff;
+	}
+
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+
+	.topnav.responsive {
+	 position: relative;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+ }
+
+ #logo {
+	 color: #fff;
+	 top: 5vmin;
+	 left: 5vmin;
+ }
 
 	h2 {
 		text-align: center;
@@ -134,39 +166,6 @@
 	.content {
 		width: 86%;
 		padding-left: 12%;
-	}
-
-/* CHANGE THE REST! (MENU + NEWSLETTER) */
-
-	#navlist {
-		line-height: 100%;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		width: 100%;
-		background-color: white;
-	}
-
-	#navlist a:not(:first-child) {
-		display: none;
-	}
-
-	.navlist a.icon {
-		float: right;
-		display: block;
-	}
-
-	.navlist.responsive {position: relative;}
-	.navlist.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.navlist.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
 	}
 
 	#FAQ_button, #contact_button {
