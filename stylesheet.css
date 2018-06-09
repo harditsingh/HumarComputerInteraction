@@ -29,7 +29,7 @@ ol {
 
 #logo {
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	left: 5vmin;
 	top: 2.3vmin;
 	margin: 0;
@@ -41,6 +41,7 @@ ol {
 
 /* Add a black background color to the top navigation */
 .topnav {
+	z-index: 1;
 	top: 0;
 	right: 0;
 	position: fixed;
@@ -57,6 +58,7 @@ ol {
 	text-align: center;
 	padding: 14px 14px;
 	text-decoration: none;
+	text-transform: uppercase;
 	font-size: 1.1em;
 }
 
@@ -94,6 +96,10 @@ ol {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#cookie_button {
+	display: inline;
 }
 
 
@@ -151,6 +157,52 @@ footer {
 	padding-top: 10vmin;
 }
 
+#newsletter {
+	margin-top: 3vmin;
+}
+
+.newsletter_input {
+	display: inline;
+	margin-top: 5vmin;
+	padding: 2vmin 3vmin;
+	border: 0;
+	border-bottom: 1px solid LightGray;		/*this is about the ugliest hack I've done, deeply sorry :D*/
+	background-color: LightGray;
+	color: #404040;
+	font-size: 1em;
+}
+
+.newsletter_text {
+	display: inline;
+	padding: 2vmin;
+	border-top: 2px solid gray;		/*2nd part of the ugliest hack*/
+	background-color: gray;
+	color: #fff;
+	font-size: 1em;
+	font-size: 1em;
+}
+
+#newsletter_submit_button{
+	padding: 2vmin;
+	border: 0;
+	border-bottom: 1px solid gray;		/*3rd part*/
+	background-color: gray;
+	color: #fff;
+	font-size: 1em;
+}
+
+#newsletter_checkbox {
+	display: block;
+	margin-top: 5vmin;
+	margin-left: 63vmin;
+	margin-bottom: -2.6vmin;
+	text-align: center;
+}
+
+#checkbox_text {
+	display: inline;
+	margin-bottom: 20vmin;
+}
 
 
 /***********************************************/
@@ -158,9 +210,28 @@ footer {
 /***********************************************/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 @media screen and (max-width: 600px) {
 
+	body {
+		font-family: Arial;
+		line-height: 1.2;
+	}
+
+	.content {
+		width: 86%;
+		padding-left: 12%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+
+/*********************** NAVIGATION ************************/
+
 	.topnav {
+		z-index: 1;
 		background-color: #333;
 	}
 
@@ -178,7 +249,8 @@ footer {
 	}
 
 	.topnav.responsive {
-	 position: relative;
+	 position: fixed;
+	 z-index: 1;
 	}
 
 	.topnav.responsive a.icon {
@@ -193,36 +265,39 @@ footer {
 		text-align: left;
  }
 
- #logo {
-	 color: #fff;
-	 top: 5vmin;
-	 left: 5vmin;
- }
+	 #logo {
+		 z-index: 2;
+	 	color: #fff;
+	 	top: 5vmin;
+	 	left: 5vmin;
+	 }
 
-	h2 {
-		text-align: center;
+/************************* PAGES ***************************/
+
+	#loading_page {
+		padding-top: 50vmin;
 	}
 
-	body {
-		font-family: Arial;
-		line-height: 1.2;
+	#intro_text {
+		margin-top: 0;
+		margin-left: 15vmin;
+		margin-right: 15vmin;
+		padding: 6vmin 0 6vmin 0;
+		font-size: 1.2em;
 	}
 
-	.content {
-		width: 86%;
-		padding-left: 12%;
+/*********************** FOOTER *************************/
+
+	#social {
+		margin-bottom: 10vmin;
 	}
 
 	#FAQ_button, #contact_button {
-		line-height: 120%;
-		height: 70vmin;
-		width:100%;
-		height: 120%;
-		padding-top: 5px;
+		height: 15vmin;
+		width: 100%;
+		padding-top: 4px;
 		padding-bottom: 5px;
-		margin-bottom: 10%;
-		font-size: 100%;
-		font-weight: normal;
+		margin-bottom: 0;
 	}
 
 	#FAQ {
@@ -231,6 +306,18 @@ footer {
 
 	#contact_button {
 		background-color: #cc99ff;
+	}
+
+	#newsletter {
+		margin-top: 40vmin;
+	}
+
+	.newsletter_text {
+		width: 500px;
+	}
+
+	#newsletter_submit_button {
+		margin-top: 2vmin;
 	}
 
 }
