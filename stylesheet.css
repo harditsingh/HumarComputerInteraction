@@ -13,11 +13,31 @@ body {
 }
 
 .content {
-	padding: 5vmin 10vmin;
+	padding: 0 10vmin;
+}
+
+.button {
+	margin-left: 41%;
+	padding: 3vmin;
+	background-color: #404040;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+section:not(:last-child) {
+	margin-bottom: 20vmin;
 }
 
 h2 {
+	margin-bottom: 10vmin;
 	text-align: center;
+}
+
+p {
+	margin-bottom: 10vmin;
+	text-align: justify;
 }
 
 ol {
@@ -106,6 +126,7 @@ ol {
 /************************** PAGES **************************/
 
 #loading_page {
+	margin-bottom: 10vmin;
 	height: 80vmin;
 	padding-top: 200px;
 	background-size: cover;
