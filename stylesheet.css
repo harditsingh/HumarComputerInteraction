@@ -143,16 +143,20 @@ ul {
 	opacity: 0.9;
 }
 
+#loading_page {
+	background-image: url(./loading_page.jpg);
+}
+
 #about_us_1 {
-	 background-image: url(./about_us_1.jpg);
+	background-image: url(./about_us_1.jpg);
 }
 
 #about_us_2 {
-	 background-image: url(./about_us_2.jpg);
+	background-image: url(./about_us_2.jpg);
 }
 
 #founders_story_1 {
-	 background-image: url(./founders_story_1.jpg);
+	background-image: url(./founders_story_1.jpg);
 }
 
 #founders_story_2 {
@@ -185,17 +189,6 @@ ul {
 
 
 /************************** PAGES **************************/
-
-#loading_page {
-	margin-bottom: 10vmin;
-	height: 80vmin;
-	padding-top: 200px;
-	background-size: cover;
-	background-image: url("./loading_page.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-	text-align:center;
-}
 
 #intro_text {
 	margin-top: -35vh;
