@@ -46,7 +46,7 @@ p {
 }
 
 .fade_in {
-	animation: fading 10s;
+	animation: fading 4s;
 }
 @keyframes fading{
 	0% {opacity:0}
