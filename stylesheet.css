@@ -33,6 +33,7 @@ section:not(:last-child) {
 h2 {
 	margin-bottom: 10vmin;
 	text-align: center;
+	font-variant: small-caps;
 }
 
 p:first-child {
@@ -42,6 +43,14 @@ p:first-child {
 p {
 	margin-bottom: 10vmin;
 	text-align: justify;
+}
+
+.fade_in {
+	animation: fading 10s;
+}
+@keyframes fading{
+	0% {opacity:0}
+	100% {opacity:0.6}
 }
 
 ul {
@@ -190,7 +199,6 @@ ul {
 
 #intro_text {
 	background: #fff;
-	opacity: 0.6;
 	border-radius: 2px;
 	margin-top: 6vmin;
 	margin-left: 25vmin;
@@ -199,6 +207,7 @@ ul {
 	text-align: center;
 	font-size: 2em;
 	color: #000;
+	opacity: 0.6;
 }
 
 /********************** SOCIAL MEDIA **********************/
