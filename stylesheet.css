@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	font-family: Arial;
 	line-height: 1.2;
-	background-color: #fff;
+	background-color: #f6f1ed;
 	color: #404040;
 }
 
@@ -19,7 +19,7 @@ body {
 .button {
 	margin-left: 41%;
 	padding: 3vmin;
-	background-color: #404040;
+	background-color: #364b46;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -49,7 +49,7 @@ ol {
 .parallax {
 	text-align: center;
 	text-transform: uppercase;
-  height: 100vh;
+  height: 80vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -96,7 +96,7 @@ ol {
 .topnav a {
 	float: right;
 	display: block;
-	color: #404040;
+	color: #364b46;
 	text-align: center;
 	padding: 14px 14px;
 	text-decoration: none;
@@ -106,7 +106,7 @@ ol {
 
 /* Add an active class to highlight the current page */
 .active {
-	background-color: #404040;
+	background-color: #364b46;
 	color: white;
 }
 
@@ -117,7 +117,7 @@ ol {
 
 /* Add a dark background on topnav links on hover */
 .topnav a:hover {
-	background-color: #404040;
+	background-color: #364b46;
 	color: white;
 }
 
@@ -178,20 +178,16 @@ ol {
 #FAQ_button, #contact_button {
 	padding-top: 3vmin;
 	padding-bottom: 3vmin;
+	background-color: #364b46;
 	text-align: center;
-}
-
-#FAQ_button {
-	background-color: LightGray;
-}
-
-#contact_button {
-	background-color: gray;
+	color: #fff;
+	border: 2px solid white;
 }
 
 .footer_column {
 	float: left;
-	width: 50%;
+	width: 49.6%;
+	margin-bottom: 5vmin;
 }
 
 footer {
@@ -213,17 +209,17 @@ footer {
 	margin-top: 5vmin;
 	padding: 2vmin 3vmin;
 	border: 0;
-	border-bottom: 1px solid LightGray;		/*this is about the ugliest hack I've done, deeply sorry :D*/
-	background-color: LightGray;
-	color: #404040;
+	border-bottom: 1px solid #8aaba3;		/*this is about the ugliest hack I've done, deeply sorry :D*/
+	background-color: #8aaba3;
+	color: #000;
 	font-size: 1em;
 }
 
 .newsletter_text {
 	display: inline;
 	padding: 2vmin;
-	border-top: 2px solid gray;		/*2nd part of the ugliest hack*/
-	background-color: gray;
+	border-top: 2px solid #364b46;		/*2nd part of the ugliest hack*/
+	background-color: #364b46;
 	color: #fff;
 	font-size: 1em;
 	font-size: 1em;
@@ -232,8 +228,8 @@ footer {
 #newsletter_submit_button{
 	padding: 2vmin;
 	border: 0;
-	border-bottom: 1px solid gray;		/*3rd part*/
-	background-color: gray;
+	border-bottom: 1px solid #364b46;		/*3rd part*/
+	background-color: #364b46;
 	color: #fff;
 	font-size: 1em;
 }
