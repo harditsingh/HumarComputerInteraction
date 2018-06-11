@@ -54,7 +54,7 @@ ul {
 #logo {
 	position: fixed;
 	z-index: 11;
-	left: 3vmin;
+	left: 3.5vmin;
 	top: 2.3vmin;
 	margin: 0;
 	padding: 0;
@@ -64,7 +64,7 @@ ul {
 }
 
 #logo_image {
-	margin-top: -2vh;
+	margin-top: -1.5vh;
 	height: 12vh;
 }
 
