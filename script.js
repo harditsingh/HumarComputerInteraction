@@ -1,5 +1,5 @@
 function main() {
-    document.getElementById("cookie_button").addEventListener("click", cookie);
+  document.getElementById("cookie_button").addEventListener("click", cookie);
 }
 
 window.addEventListener("load", main);
@@ -9,7 +9,7 @@ window.addEventListener("load", main);
 /* cookies popup*/
 
 function cookie() {
-    document.getElementById("cookiePopup").style.display = "none";
+  document.getElementById("cookiePopup").style.display = "none";
 }
 
 

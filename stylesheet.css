@@ -44,6 +44,28 @@ ol {
 	list-style: decimal outside;
 }
 
+/********************** PARALLAX *************************/
+
+.parallax {
+	text-align: center;
+	text-transform: uppercase;
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about_us_1 {
+	 background-image: url(./about_us_1.jpg);
+}
+
+#about_us_2 {
+	 background-image: url(./about_us_2.jpg);
+}
+
 
 /********************** NAVIGATION *************************/
 
