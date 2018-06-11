@@ -172,6 +172,17 @@ ol {
 	color: #000;
 }
 
+/********************** SOCIAL MEDIA **********************/
+
+.socal_media_button {
+	padding: 2vmin 3vmin;
+	border-radius: 100px;
+	background-color: #364b46;
+	font-family: 'Lucida Console';
+	font-size: 2em;
+	text-decoration: none;
+	color: #fff;
+}
 
 /************************* FOOTER *************************/
 
