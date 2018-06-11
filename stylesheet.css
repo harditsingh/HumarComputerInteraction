@@ -35,35 +35,17 @@ h2 {
 	text-align: center;
 }
 
+p:first-child {
+	margin-top: 10vh;
+}
+
 p {
 	margin-bottom: 10vmin;
 	text-align: justify;
 }
 
-ol {
-	list-style: decimal outside;
-}
-
-/********************** PARALLAX *************************/
-
-.parallax {
-	text-align: center;
-	text-transform: uppercase;
-  height: 80vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about_us_1 {
-	 background-image: url(./about_us_1.jpg);
-}
-
-#about_us_2 {
-	 background-image: url(./about_us_2.jpg);
+ul {
+	margin-bottom: 10vh;
 }
 
 
@@ -71,8 +53,8 @@ ol {
 
 #logo {
 	position: fixed;
-	z-index: 2;
-	left: 5vmin;
+	z-index: 11;
+	left: 3vmin;
 	top: 2.3vmin;
 	margin: 0;
 	padding: 0;
@@ -81,9 +63,14 @@ ol {
 	text-decoration: none;
 }
 
+#logo_image {
+	margin-top: -2vh;
+	height: 12vh;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-	z-index: 1;
+	z-index: 10;
 	top: 0;
 	right: 0;
 	position: fixed;
@@ -119,6 +106,48 @@ ol {
 .topnav a:hover {
 	background-color: #364b46;
 	color: white;
+}
+
+
+/********************** PARALLAX *************************/
+
+.parallax {
+  height: 100vh;
+	z-index: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+	z-index: 1;
+	position: relative;
+	padding-top: 40vh;
+	text-align: center;
+	font-size: 3.7em;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 8px black;
+	opacity: 0.8;
+}
+
+#about_us_1 {
+	 background-image: url(./about_us_1.jpg);
+}
+
+#about_us_2 {
+	 background-image: url(./about_us_2.jpg);
+}
+
+#founders_story_1 {
+	 background-image: url(./founders_story_1.jpg);
+}
+
+#founders_story_2 {
+	 background-image: url(./founders_story_2.jpg);
 }
 
 /***************** COOKIE POPUP *********************/
