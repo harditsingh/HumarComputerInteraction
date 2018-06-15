@@ -1,0 +1,405 @@
+/***********************************************/
+/***************** DESKTOP *********************/
+/***********************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	line-height: 1.2;
+	background-color: #f6f1ed;
+	color: #404040;
+}
+
+.content {
+	padding: 0 10vmin;
+}
+
+.button {
+	margin-left: 41%;
+	padding: 3vmin;
+	background-color: #364b46;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+section:not(:last-child) {
+	margin-bottom: 20vmin;
+}
+
+h2 {
+	margin-bottom: 10vmin;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+p:first-child {
+	margin-top: 10vh;
+}
+
+p {
+	margin-bottom: 10vmin;
+	text-align: justify;
+}
+
+.fade_in {
+	animation: fading 4s;
+}
+@keyframes fading {
+	0% {opacity:0}
+	100% {opacity:0.9}
+}
+
+ul {
+	margin-bottom: 10vh;
+}
+
+
+/********************** NAVIGATION *************************/
+
+#logo {
+	position: fixed;
+	z-index: 11;
+	left: 3.5vmin;
+	top: 2.3vmin;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	color: #404040;
+	text-decoration: none;
+}
+
+#logo_image {
+	margin-top: -1.5vh;
+	height: 12vh;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	z-index: 10;
+	top: 0;
+	right: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: right;
+	display: block;
+	color: #364b46;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+	background-color: #364b46;
+	color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+/* Add a dark background on topnav links on hover */
+.topnav a:hover {
+	background-color: #364b46;
+	color: white;
+}
+
+
+/********************** PARALLAX *************************/
+
+.parallax {
+  height: 100vh;
+	z-index: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+	z-index: 1;
+	position: relative;
+	padding-top: 35vh;
+	text-align: center;
+	font-size: 3.7em;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 2px black;
+	opacity: 0.9;
+}
+
+#loading_page {
+	background-image: url(./loading_page.jpg);
+}
+
+#about_us_1 {
+	background-image: url(./about_us_1.jpg);
+}
+
+#about_us_2 {
+	background-image: url(./about_us_2.jpg);
+}
+
+#founders_story_1 {
+	background-image: url(./founders_story_1.jpg);
+}
+
+#founders_story_2 {
+	 background-image: url(./founders_story_2.jpg);
+}
+
+/***************** COOKIE POPUP *********************/
+
+#cookiePopup {
+    bottom: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		padding: 5vmin;
+    background-color: #404040;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+		padding-bottom: 2vmin;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#cookie_button {
+	display: inline;
+}
+
+
+/************************** PAGES **************************/
+
+#intro_text {
+	margin-top: -35vh;
+	margin-left: 25vmin;
+	margin-right: 25vmin;
+}
+
+/********************** SOCIAL MEDIA **********************/
+
+.socal_media_button {
+	padding: 2vmin 3vmin;
+	border-radius: 100px;
+	background-color: #364b46;
+	font-family: 'Lucida Console';
+	font-size: 2em;
+	text-decoration: none;
+	color: #fff;
+}
+
+/************************* FOOTER *************************/
+
+#FAQ_button, #contact_button {
+	padding-top: 3vmin;
+	padding-bottom: 3vmin;
+	background-color: #364b46;
+	text-align: center;
+	color: #fff;
+	border: 2px solid white;
+}
+
+.footer_column {
+	float: left;
+	width: 49.6%;
+	margin-bottom: 5vmin;
+}
+
+footer {
+	padding-bottom: 200px;
+}
+
+#social, #newsletter {
+	height: 10vmin;
+	text-align: center;
+	padding-top: 10vmin;
+}
+
+#newsletter {
+	margin-top: 10vmin;
+}
+
+.newsletter_input {
+	display: inline;
+	margin-top: 5vmin;
+	padding: 2vmin 3vmin;
+	border: 0;
+	border-bottom: 1px solid #8aaba3;		/*this is about the ugliest hack I've done, deeply sorry :D*/
+	background-color: #8aaba3;
+	color: #000;
+	font-size: 1em;
+}
+
+.newsletter_text {
+	display: inline;
+	padding: 2vmin;
+	border-top: 2px solid #364b46;		/*2nd part of the ugliest hack*/
+	background-color: #364b46;
+	color: #fff;
+	font-size: 1em;
+	font-size: 1em;
+}
+
+#newsletter_submit_button{
+	padding: 2vmin;
+	border: 0;
+	border-bottom: 1px solid #364b46;		/*3rd part*/
+	background-color: #364b46;
+	color: #fff;
+	font-size: 1em;
+}
+
+#newsletter_checkbox {
+	display: block;
+	margin-top: 5vmin;
+	margin-left: 63vmin;
+	margin-bottom: -2.6vmin;
+	text-align: center;
+}
+
+#checkbox_text {
+	display: inline;
+	margin-bottom: 20vmin;
+}
+
+
+/***********************************************/
+/****************** MOBILE *********************/
+/***********************************************/
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+
+	body {
+		font-family: Arial;
+		line-height: 1.2;
+	}
+
+	.content {
+		width: 86%;
+		padding-left: 12%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+
+/*********************** NAVIGATION ************************/
+
+	.topnav {
+		z-index: 1;
+		background-color: #333;
+	}
+
+	.topnav a {
+		color: #fff;
+	}
+
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+
+	.topnav.responsive {
+	 position: fixed;
+	 z-index: 1;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+ }
+
+	 #logo {
+		 z-index: 2;
+	 	color: #fff;
+	 	top: 5vmin;
+	 	left: 5vmin;
+	 }
+
+/************************* PAGES ***************************/
+
+	#loading_page {
+		padding-top: 50vmin;
+	}
+
+	#intro_text {
+		margin-top: 0;
+		margin-left: 15vmin;
+		margin-right: 15vmin;
+		padding: 6vmin 0 6vmin 0;
+		font-size: 1.2em;
+	}
+
+/*********************** FOOTER *************************/
+
+	#social {
+		margin-bottom: 10vmin;
+	}
+
+	#FAQ_button, #contact_button {
+		height: 15vmin;
+		width: 100%;
+		padding-top: 4px;
+		padding-bottom: 5px;
+		margin-bottom: 0;
+	}
+
+	#FAQ {
+		background-color: #99c2ff;
+	}
+
+	#contact_button {
+		background-color: #cc99ff;
+	}
+
+	#newsletter {
+		margin-top: 40vmin;
+	}
+
+	.newsletter_text {
+		width: 500px;
+	}
+
+	#newsletter_submit_button {
+		margin-top: 2vmin;
+	}
+
+}
