@@ -156,7 +156,8 @@
                         discussion one
                     </p>
                     <section class="discussion-post">
-                        <p class="discussion-text">Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
                             fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
                             Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
                             tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
@@ -167,7 +168,8 @@
                         </p>
                     </section>
                     <section class="discussion-comment">
-                        <p class="discussion-text">Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
                             fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
                             Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
                             tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
@@ -179,15 +181,107 @@
                     </section>
                     <section class="discussion-new-comment">
                         <p class="discussion-text">
-                            enter new comment
+                            enter new comment (not logged in)
                         </p>
-                        <form>
+                        <form class="discussion-form">
                             name: <input class="discussion-comment-input" type="text" name="name">
                             comment: <input class="discussion-comment-input comment-area" type="text" name="comment">
                             <input class="discussion-comment-input-submit-button" type="submit" value="submit">
                         </form>
                     </section>
                 </section>
+
+                <section class="discussion">
+                    <p class="discussion-title">
+                        discussion two
+                    </p>
+                    <section class="discussion-post">
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                            fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
+                            Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
+                            tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
+                            Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                        </p>
+                        <p class="discussion-user">
+                            userOne
+                        </p>
+                    </section>
+                    <section class="discussion-comment">
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                            fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
+                            Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
+                            tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
+                            Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                        </p>
+                        <p class="discussion-user">
+                            userTwo
+                        </p>
+                    </section>
+                    <section class="discussion-new-comment">
+                        <p class="discussion-text">
+                            enter new comment (logged in)
+                        </p>
+                        <form class="discussion-form">
+                            comment: <input class="discussion-comment-input comment-area" type="text" name="comment">
+                            <input class="discussion-comment-input-submit-button" type="submit" value="submit">
+                        </form>
+                    </section>
+                </section>
+
+                <button class="read-more-button" id="read-more-button" onclick="readMore()">read more</button>
+
+                <section class="discussion" id="hidden-discussion">
+                    <p class="discussion-title">
+                        discussion two
+                    </p>
+                    <section class="discussion-post">
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                            fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
+                            Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
+                            tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
+                            Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                        </p>
+                        <p class="discussion-user">
+                            userOne
+                        </p>
+                    </section>
+                    <section class="discussion-comment">
+                        <p class="discussion-text">
+                            Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
+                            fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
+                            Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
+                            tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
+                            Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                        </p>
+                        <p class="discussion-user">
+                            userTwo
+                        </p>
+                    </section>
+                    <section class="discussion-new-comment">
+                        <p class="discussion-text">
+                            enter new comment (logged in)
+                        </p>
+                        <form class="discussion-form">
+                            comment: <input class="discussion-comment-input comment-area" type="text" name="comment">
+                            <input class="discussion-comment-input-submit-button" type="submit" value="submit">
+                        </form>
+                    </section>
+                </section>
+
+                <section class="discussion-new-discussion">
+                  <form class="discussion-form">
+                      <p class="discussion-text">
+                          start new discussion
+                      </p>
+                      title: <input class="new-discussion-input" type="text" name="title"><br>
+                      comment: <input class="new-discussion-input comment-area" type="text" name="comment">
+                      <input class="new-discussion-input-submit-button" type="submit" value="submit">
+                  </form>
+                </section>
+
             </div>
         </div>
     </section>
