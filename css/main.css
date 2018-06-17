@@ -62,12 +62,14 @@ img {
     background-size: cover;
 }
 
-.menu {
+.menu-mobile {
     z-index: 5;
     width: 100%;
     height: 50px;
     padding: 11px;
+    display: :none;
     position: fixed;
+    justify-content: space-between;
     bottom: 0;
     background: #fff;
     -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
@@ -165,6 +167,7 @@ img {
     background-size: cover;
     width: 120px;
     height: 25px;
+    min-width: 120px;
 }
 
 .desktop .logo-container {
@@ -351,6 +354,25 @@ nav a:focus {
     transform: translateY(-100%);
 }
 
+.menu-popup .cl-effect-9 a span:last-child {
+    z-index: 1;
+    display: block;
+    padding: 8px 0 0 0;
+    color: rgba(0, 0, 0, 0.4);
+    text-shadow: none;
+    text-transform: none;
+    font-style: italic;
+    font-size: 0.75em;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
 .cl-effect-9 a:hover::before,
 .cl-effect-9 a:focus::before {
     background: #454545;
@@ -360,7 +382,11 @@ nav a:focus {
 .static .cl-effect-9 a:hover::before,
 .static .cl-effect-9 a:hover::after,
 .static .cl-effect-9 a:focus::before,
-.static .cl-effect-9 a:focus::after {
+.static .cl-effect-9 a:focus::after,
+.menu-popup .cl-effect-9 a:hover::before,
+.menu-popup .cl-effect-9 a:hover::after,
+.menu-popup .cl-effect-9 a:focus::before,
+.menu-popup .cl-effect-9 a:focus::after {
     background: #454545;
     opacity: 1;
     -webkit-transform: translateY(0px);
@@ -369,7 +395,9 @@ nav a:focus {
 }
 
 .static .cl-effect-9 a:hover span:last-child,
-.static .cl-effect-9 a:focus span:last-child {
+.static .cl-effect-9 a:focus span:last-child,
+.menu-popup .cl-effect-9 a:hover span:last-child,
+.menu-popup .cl-effect-9 a:focus span:last-child {
     opacity: 1;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
@@ -412,7 +440,7 @@ nav a:focus {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
 }
 
-.active {
+.desktop .active {
     visibility: visible;
     -webkit-transform: none;
     transform: none;
@@ -517,8 +545,34 @@ nav a:focus {
     display: inherit;
 }
 
+/* Mobile Nav */
 
+.hamburger {
+    width: 25px;
+    height: 25px;
+    background: url("../img/menu-icon.svg");
+    cursor: pointer;
+    background-size: cover;
+}
 
+.menu-popup {
+    display: none;
+    position: absolute;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background: #fff;
+}
+
+.mobile .active {
+    display: flex;
+    align-items: center;
+}
+
+.menu-popup .cl-effect-9 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
 /* Avatar */
 
@@ -526,9 +580,68 @@ nav a:focus {
 
 }
 
+
+/* Discussion Styles */
+
+.discussion {
+    padding: 7px 12px 15px 12px;
+    border: 1px solid black;
+  }
+  
+  .discussion-title {
+    text-align: justify;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  
+  .discussion-text {
+    margin: 0 0 2vh 0;
+    text-align: justify;
+  }
+  
+  .discussion-user {
+    margin: 0;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .discussion-post {
+    padding: 7px 12px;
+    border: 1px solid black;
+  }
+  
+  .discussion-comment {
+    margin: 2vh 40vmin 0 10vmin;
+    padding: 7px 12px;
+    border: 1px solid black;
+    text-align: justify;
+  }
+  
+  .discussion-new-comment {
+    margin: 2vh 40vmin 0 10vmin;
+    padding: 7px 12px 0 12px;
+    border: 1px solid black;
+    text-align: justify;
+  }
+  
+  .discussion-comment-input {
+    display: block;
+    margin: 0;
+  }
+  
+  .comment-area {
+    width: 100%;
+    height: 40vh !important;
+  }
+  
+  .discussion-comment-input-submit-button {
+    margin-top: 2vh;
+  }
+
+
 /* For mobile */
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .desktop {
         display: none;
     }
@@ -540,6 +653,10 @@ nav a:focus {
     }
     .vertical-center {
         display: block;
+    }
+
+    .menu-mobile {
+        display: inline-flex !important;
     }
 }
 
