@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adam &amp; Aoki | About</title>
+    <title>Adam &amp; Aoki | Signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/skeleton.css">
@@ -50,7 +50,7 @@
         <div class="static-top-menu-desktop desktop">
             <div class="top-bar">
                 <div class="static">
-                    <div class="logo-container"></div>
+                        <a href="index.html"><div class="logo-container"></div></a>
                     <div class="search-container">
                         <input type="text" placeholder="Search">
                         <div class="search-button">
@@ -68,11 +68,11 @@
                                 <span>Shop</span>
                                 <span>Buy, buy!</span>
                             </a>
-                            <a href="#">
+                            <a href="about.html">
                                 <span>About Us</span>
                                 <span>Who are we?</span>
                             </a>
-                            <a href="discussion.html">
+                            <a href="#">
                                 <span>Discussion</span>
                                 <span>Let's talk</span>
                             </a>
@@ -83,15 +83,15 @@
 
                         </nav>
                         <div class="cart-icon">
-                            <div class="cart-count">3</div>
-                        </div>
+                                <div class="cart-count">3</div>
+                            </div>
                     </div>
 
 
 
                 </div>
                 <div class="scrolling">
-                    <div class="logo-container"></div>
+                    <a href="index.html"><div class="logo-container"></div></a>
                     <div class="search-container">
                         <input type="text" placeholder="Search">
                         <div class="search-button">
@@ -108,10 +108,10 @@
                             <a href="#">
                                 <span>Shop</span>
                             </a>
-                            <a href="#">
+                            <a href="about.html">
                                 <span>About Us</span>
                             </a>
-                            <a href="discussion.html">
+                            <a href="#">
                                 <span>Discussion</span>
                             </a>
                             <a href="#">
@@ -119,8 +119,8 @@
                             </a>
                         </nav>
                         <div class="cart-icon">
-                            <div class="cart-count">3</div>
-                        </div>
+                                <div class="cart-count">3</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@
 
                     </div>
                     <div class="title-container medium">
-                        Where did we come from?
+                        Discussion
                     </div>
                 </div>
             </div>
@@ -149,92 +149,107 @@
     </section>
     <section class="content high" id="first-container">
         <div class="container vertical-center-column">
-            <div class="row">
-                <div class="twelve columns">
-                    <h1 class="section-title">
-                        The Founders
-                    </h1>
-                    <div class="avatar-holder">
-                        <div class="avatar">
-                            <img src="img/avatar.jpg">
+            <div class="twelve columns">
+                <h1>Login</h1>
+                <div class="container">
+
+                        <div class="row">
+            
+                            <div class="vl"></div>
+            
+                            <div class="col">
+            
+                                <h3 style="text-align:left">Create your account</h3>
+            
+                                <label for="firstname" class="b">First name*: </label>
+                                <input type="text" name="firstname" placeholder="Your first name" required><br>
+            
+                                <label for="lastname" class="b">Last name*:</label>
+                                <input type="text" name="lastname" placeholder="Your last name" required><br>
+            
+                                <label for="email" class="b">E-mail*:  </label>
+                                <input type="email" name="email" placeholder="Your email" required><br>
+            
+                                <label for="confmemail" class="b">Confirm e-mail*:  </label>
+                                <input type="email" name="email" placeholder="Confirm e-mail" required><br>
+            
+                                <label for="gender" class="b">Gender*:  </label>
+                                <select>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                </select> &nbsp;
+            
+                                <label for="bday" class="b">Date of birth*:</label>
+                                <input type="date" name="bday" max="2000-01-01"><br>
+            
+                                <label for="text" class="b">Username*:  </label>
+                                <input type="text" name="username" placeholder="Your username" required><br>
+            
+            
+                                <label for="pwd" class="b">Password* (must be 4 ~ 8 letters):  </label>
+                                <input type="password" name="password" placeholder="Your password" autocomplete="off" required><br>
+                                <label for="confmpwd" class="b">Repeat your password*:  </label>
+                                <input type="password" name="password" placeholder="Repeat Your Password" autocomplete="off" required><br>
+            
+            
+                            </div>
+            
+                            <div class="col">
+            
+                                <h3 style="text-align:left">Address details and payment method</h3>
+                                <label for="street" class="b">Street name*: </label>
+                                <input type="text" name="street" placeholder="Street name" required><br>
+            
+                                <label for="Housenr" class="b">House No.*:</label>
+                                <input type="text" name="Housenr" placeholder="House No." required><br>
+            
+                                <label for="Zipcode" class="b">Post code*:  </label>
+                                <input type="text" pattern="[0-9]{4}[a-zA-Z]{2}" name="postal code" placeholder="Postal code" required><br>
+            
+                                <label for="Province" class="b">Province*:  </label>
+                                <input type="text" name="prvnce" placeholder="Province" required><br>
+            
+                                <label for="Address" class="b">Country*: &nbsp; </label>
+                                <select>
+                                    <option value="empty">Please choose</option>
+                                    <option value="NL">The Netherlands</option>
+                                    <option value="BE">Belguim</option>
+                                </select><br>
+                                <br>
+            
+                                <label for="Payment" class="b">Payment Method*:  </label>
+                                <select>
+                                    <option value="Please choose">Please choose</option>
+                                    <option value="MasterCard">MasterCard</option>
+                                    <option value="VisaCard">VisaCard</option>
+                                    <option value="Maestro">Maestro</option>
+                                </select> &nbsp;<br>
+                                <br>
+                                <label for="cardholder" class="b">Card Holder Name*:</label>
+                                <input type="text" name="cardholder" placeholder="Card Holder Name"><br>
+            
+                                <label for="cardnr" class="b">Card No.*:  </label>
+                                <input type="number" name="cardnr" placeholder="Card No." required><br>
+            
+            
+                                <label for="validity" class="b">Valid till*: </label>
+                                <input type="date" name="validity" min="2019-03-01"><br>
+            
+                                <label for="last3digits" class="b">Last 3 digits*: (the back of the card)</label>
+                                <input type="number" name="last3digits" placeholder="Last 3 Digits" required><br>
+            
+                                <input type="submit" value="Register">
+                            </div>
+            
                         </div>
-                        <div class="caption"></div>
+            
                     </div>
-                </div>
+            
             </div>
         </div>
     </section>
-    <section class="content high" id="about-us">
-        <div class="container vertical-center-column">
-            <div class="six columns">
-                <h1>This is a t-shirt.</h1>
-                <p class="left-align">Yep, we sell t-shirts. And not just any t-shirts, T-Shirts 4.0. Here's some more Harry Potter Ipsum:</p>
-                <p class="justify">Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters
-                    fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.
-                    Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright
-                    tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground,
-                    Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.</p>
-                <p class="right-align">Here are some buttons for ya</p>
-                <div class="button">Here's one</div>
-                <div class="button inverted-button">And here's another</div>
-            </div>
-            <div class="six columns">
-                <img src="img/landing.jpg">
-            </div>
-        </div>
-    </section>
-    <section class="content low colour-1">
-        <div class="container">
-            <div class="row vertical-center-row">
-                <div class="twelve columns">
-                    <h1>Here's a nicely coloured section.</h1>
-                    <h2 class="footer-heading">Nice, right?</h2>
-                    <img src="img/img2.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content high">
-        <div class="container">
-            <div class="row vertical-center-row">
-                <div class="five columns">
-                    <h1>Harry Potter is a great guy.</h1>
-                    <div class="button squared-button">Another button</div>
-                    <div class="button borderless-button">And another one</div>
-                </div>
-                <div class="seven columns justify">Red hair crookshanks bludger Marauder’s Map Prongs sunshine daisies butter mellow Ludo Bagman. Beaters gobbledegook
-                    N.E.W.T., Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto
-                    patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope, splinched fire-whisky
-                    silver Leprechaun O.W.L. stroke the spine. Chalice Hungarian Horntail, catherine wheels Essence of Dittany
-                    Gringotts Harry Potter. Prophecies Yaxley green eyes Remembrall horcrux hand of the servant. Devil’s
-                    snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet
-                    letters from no one Dervish and Banges leg. Boggarts lavender robes, Hermione Granger Fantastic Beasts
-                    and Where to Find Them. Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s
-                    Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus
-                    Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and
-                    Parvati Sorting Hat Minister of Magic blue turban remember my last. Toad-like smile Flourish and Blotts
-                    he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus.
-                    So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet
-                    Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback.
-                    Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged
-                    frisbees, phoenix tears good clean match.</div>
-            </div>
-            <!-- <div class="row">
-                <div class="two columns">Two</div>
-                <div class="ten columns">Ten</div>
-            </div>
-            <div class="row">
-                <div class="one-third column">1/3</div>
-                <div class="two-thirds column">2/3</div>
-            </div>
-            <div class="row">
-                <div class="one-half column">1/2</div>
-                <div class="one-half column">1/2</div>
-            </div> -->
 
-        </div>
-
-    </section>
     <footer class="footer">
         <div class="container">
             <div class="row vertical-center-row">
