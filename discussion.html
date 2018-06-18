@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adam &amp; Aoki | Discussion</title>
+    <title>Adam &amp; Aoki | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/skeleton.css">
@@ -18,39 +18,13 @@
 
 <body>
     <section class="menu-container">
-            <div class="mobile">
-                    <div class="menu-popup" id="popup">
-                            <nav class="cl-effect-9">
-                                    <a href="#">
-                                        <span>Shop</span>
-                                        <span>Buy, buy!</span>
-                                    </a>
-                                    <a href="about.html">
-                                        <span>About Us</span>
-                                        <span>Who are we?</span>
-                                    </a>
-                                    <a href="discussion.html">
-                                        <span>Discussion</span>
-                                        <span>Let's talk</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>Contact</span>
-                                        <span>Come, see us?</span>
-                                    </a>
-        
-                                </nav>
-                    </div>
-                </div>
-                <div class="menu-mobile mobile">
-                        <a href="index.html"><div class="logo-container"></div></a>
-                    <div class="hamburger" id="menu-toggle"></div>
-                    
-        
-                </div>
+        <div class="menu mobile">
+            <div class="logo-container"></div>
+        </div>
         <div class="static-top-menu-desktop desktop">
             <div class="top-bar">
                 <div class="static">
-                        <a href="index.html"><div class="logo-container"></div></a>
+                    <div class="logo-container"></div>
                     <div class="search-container">
                         <input type="text" placeholder="Search">
                         <div class="search-button">
@@ -91,7 +65,7 @@
 
                 </div>
                 <div class="scrolling">
-                    <a href="index.html"><div class="logo-container"></div></a>
+                    <div class="logo-container"></div>
                     <div class="search-container">
                         <input type="text" placeholder="Search">
                         <div class="search-button">
@@ -150,8 +124,114 @@
     <section class="content high" id="first-container">
         <div class="container vertical-center-column">
             <div class="twelve columns">
-                <h1>Here's a new discussion</h1>
-                 <section class="discussion">
+
+<style>
+
+.discussion {
+  margin-bottom: 3vh;
+  padding: 7px 12px 15px 12px;
+  background-color: #f3ede9;
+  border: 1px solid black;
+}
+
+.discussion-title {
+  text-align: justify;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.discussion-post {
+  padding: 7px 12px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.discussion-text {
+  margin: 0 0 2vh 0;
+  text-align: justify;
+}
+
+.discussion-user {
+  margin: 0;
+  text-align: right;
+  font-style: italic;
+}
+
+.discussion-comment {
+  margin: 2vh 40vmin 0 10vmin;
+  padding: 7px 12px;
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.discussion-form {
+  margin: 0;
+}
+
+.discussion-new-comment {
+  margin: 2vh 40vmin 0 10vmin;
+  padding: 7px 12px 0 12px;
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.discussion-comment-input {
+  display: block;
+  margin: 0;
+}
+
+.comment-area {
+  width: 100%;
+  height: 40vh !important;
+}
+
+.discussion-comment-input-submit-button {
+  margin-top: 2vh;
+}
+
+.discussion-new-discussion {
+  padding: 7px 12px 0 12px;
+  background-color: #f3ede9;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+#read-more-button {
+  margin-bottom: 3vh;
+}
+
+#hidden-discussion {
+  display: none;
+}
+
+</style>
+
+<script>
+
+function main() {
+  document.getElementById("read-more-button").addEventListener("click", readMore);
+}
+
+window.addEventListener("load", main);
+
+function readMore() {
+  var x = document.getElementById("read-more-button");
+  if (x.className === "read-more-button") {
+      x.className = "read-less-button";
+      document.getElementById("hidden-discussion").style.display = "block";
+      x.innerHTML = "read less";
+  } else if (x.className === "read-less-button") {
+      /*x.className = "read-more-button";
+      document.getElementById("hidden-discussion").style.display = "none";
+      x.innerHTML = "read more";*/
+  }
+}
+
+</script>
+
+                <section class="discussion">
                     <p class="discussion-title">
                         discussion one
                     </p>
