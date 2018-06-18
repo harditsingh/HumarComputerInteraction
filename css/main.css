@@ -584,59 +584,83 @@ nav a:focus {
 /* Discussion Styles */
 
 .discussion {
-    padding: 7px 12px 15px 12px;
-    border: 1px solid black;
-  }
-  
-  .discussion-title {
-    text-align: justify;
-    font-size: 1.5em;
-    text-transform: uppercase;
-  }
-  
-  .discussion-text {
-    margin: 0 0 2vh 0;
-    text-align: justify;
-  }
-  
-  .discussion-user {
-    margin: 0;
-    text-align: right;
-    font-style: italic;
-  }
-  
-  .discussion-post {
-    padding: 7px 12px;
-    border: 1px solid black;
-  }
-  
-  .discussion-comment {
-    margin: 2vh 40vmin 0 10vmin;
-    padding: 7px 12px;
-    border: 1px solid black;
-    text-align: justify;
-  }
-  
-  .discussion-new-comment {
-    margin: 2vh 40vmin 0 10vmin;
-    padding: 7px 12px 0 12px;
-    border: 1px solid black;
-    text-align: justify;
-  }
-  
-  .discussion-comment-input {
-    display: block;
-    margin: 0;
-  }
-  
-  .comment-area {
-    width: 100%;
-    height: 40vh !important;
-  }
-  
-  .discussion-comment-input-submit-button {
-    margin-top: 2vh;
-  }
+  margin-bottom: 3vh;
+  padding: 7px 12px 15px 12px;
+  background-color: #f3ede9;
+  border: 1px solid black;
+}
+
+.discussion-title {
+  text-align: justify;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.discussion-post {
+  padding: 7px 12px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.discussion-text {
+  margin: 0 0 2vh 0;
+  text-align: justify;
+}
+
+.discussion-user {
+  margin: 0;
+  text-align: right;
+  font-style: italic;
+}
+
+.discussion-comment {
+  margin: 2vh 40vmin 0 10vmin;
+  padding: 7px 12px;
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.discussion-form {
+  margin: 0;
+}
+
+.discussion-new-comment {
+  margin: 2vh 40vmin 0 10vmin;
+  padding: 7px 12px 0 12px;
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.discussion-comment-input {
+  display: block;
+  margin: 0;
+}
+
+.comment-area {
+  width: 100%;
+  height: 40vh !important;
+}
+
+.discussion-comment-input-submit-button {
+  margin-top: 2vh;
+}
+
+.discussion-new-discussion {
+  padding: 7px 12px 0 12px;
+  background-color: #f3ede9;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+#read-more-button {
+  margin-bottom: 3vh;
+}
+
+#hidden-discussion {
+  display: none;
+}
 
   /* Login/Signup Forms */
 
