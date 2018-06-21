@@ -14,6 +14,10 @@ img {
     width: 100%;
 }
 
+.full-width {
+    width: 100%;
+}
+
 .heading {
     font-family: 'Lora', serif;
 }
@@ -53,6 +57,16 @@ img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6989A2', endColorstr='#7698B1', GradientType=1);
 }
 
+.starry-background {
+    color: #fff;
+    background-color: #000;
+    background: url("../img/starry-back.jpg") 50% 50%;
+}
+
+.review-background {
+    background: #f7f7f7;
+}
+
 .landing-background {
     width: 100%;
     height: 100%;
@@ -67,7 +81,7 @@ img {
     width: 100%;
     height: 50px;
     padding: 11px;
-    display: :none;
+    display: none;
     position: fixed;
     justify-content: space-between;
     bottom: 0;
@@ -77,7 +91,7 @@ img {
 }
 
 .content {
-    min-height: 800px;
+    /* min-height: 800px; */
     padding: 30px 0px;
 }
 
@@ -202,6 +216,10 @@ img {
     font-weight: 500;
 }
 
+.raleway {
+    font-family: 'Raleway';
+}
+
 .justify {
     text-align: justify !important;
     text-justify: inter-word !important;
@@ -217,6 +235,10 @@ img {
 
 .small {
     font-size: 200%;
+}
+
+.extra-small {
+    font-size: 150%;
 }
 
 .medium {
@@ -515,6 +537,15 @@ nav a:focus {
     margin-top: 7px;
 }
 
+.mobile .search-button {
+    transform: translateY(5%);
+    width: 25px;
+}
+
+.mobile .search-button:hover {
+    background: #eee;
+}
+
 /* Cart Icon */
 
 .cart-icon {
@@ -531,6 +562,14 @@ nav a:focus {
     margin-left: 15px;
 }
 
+.mobile .cart-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 0;
+    min-width: 25px;
+    margin-left: 0;
+}
+
 .cart-icon:hover {
     opacity: 0.7;
 }
@@ -538,6 +577,12 @@ nav a:focus {
 .cart-count {
     text-align: center;
     transform: translateX(10%);
+}
+
+.mobile .cart-count {
+    height: 25px;
+    transform: translateX(99%);
+    background: #000;
 }
 
 .nav-container {
@@ -557,7 +602,8 @@ nav a:focus {
 
 .menu-popup {
     display: none;
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     height: calc(100vh - 50px);
     width: 100%;
     background: #fff;
@@ -576,195 +622,432 @@ nav a:focus {
 
 /* Avatar */
 
-.avatar-container {
-
-}
-
+.avatar-container {}
 
 /* Discussion Styles */
 
 .discussion {
-  margin-bottom: 3vh;
-  padding: 7px 12px 15px 12px;
-  background-color: #f3ede9;
-  border: 1px solid black;
+    margin-bottom: 3vh;
+    padding: 7px 12px 15px 12px;
+    background-color: #f3ede9;
+    border: 1px solid black;
 }
 
 .discussion-title {
-  text-align: justify;
-  font-size: 1.5em;
-  text-transform: uppercase;
+    text-align: justify;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 .discussion-post {
-  padding: 7px 12px;
-  background-color: #fff;
-  border: 1px solid black;
+    padding: 7px 12px;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 .discussion-text {
-  margin: 0 0 2vh 0;
-  text-align: justify;
+    margin: 0 0 2vh 0;
+    text-align: justify;
 }
 
 .discussion-user {
-  margin: 0;
-  text-align: right;
-  font-style: italic;
+    margin: 0;
+    text-align: right;
+    font-style: italic;
 }
 
 .discussion-comment {
-  margin: 2vh 40vmin 0 10vmin;
-  padding: 7px 12px;
-  background-color: #fff;
-  border: 1px solid black;
-  text-align: justify;
+    margin: 2vh 40vmin 0 10vmin;
+    padding: 7px 12px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: justify;
 }
 
 .discussion-form {
-  margin: 0;
+    margin: 0;
 }
 
 .discussion-new-comment {
-  margin: 2vh 40vmin 0 10vmin;
-  padding: 7px 12px 0 12px;
-  background-color: #fff;
-  border: 1px solid black;
-  text-align: justify;
+    margin: 2vh 40vmin 0 10vmin;
+    padding: 7px 12px 0 12px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: justify;
 }
 
 .discussion-comment-input {
-  display: block;
-  margin: 0;
+    display: block;
+    margin: 0;
 }
 
 .comment-area {
-  width: 100%;
-  height: 40vh !important;
+    width: 100%;
+    height: 40vh !important;
 }
 
 .discussion-comment-input-submit-button {
-  margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 .discussion-new-discussion {
-  padding: 7px 12px 0 12px;
-  background-color: #f3ede9;
-  border: 1px solid black;
-  text-align: justify;
+    padding: 7px 12px 0 12px;
+    background-color: #f3ede9;
+    border: 1px solid black;
+    text-align: justify;
 }
 
 #read-more-button {
-  margin-bottom: 3vh;
+    margin-bottom: 3vh;
 }
 
 #hidden-discussion {
-  display: none;
-}
-
-  /* Login/Signup Forms */
-
-  input,
-.btn {
-  width: 50%;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none; /* remove underline from anchors */
-}
-
-input:hover,
-.btn:hover {
-  opacity: 1;
-}
-
-/* style the submit button */
-input[type=submit] {
-  background-color: #345A5E;
-  color: white;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #2574A9;
-}
-
-/* Two-column layout */
-.col {
-  float: left;
-  width: 50%;
-  margin: auto;
-  padding: 0 50px;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* vertical line */
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: 2px solid #ddd;
-  height: 175px;
-}
-/* The Modal (background) */
-.modal {
-    left: 0;
-    top: 0;
-    width: 30%;
-    height: 30%;
-    padding-top: 12px;
-}
-/* text inside the vertical line */
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-}
-
-
-/* bottom container */
-.bottom-container {
-  width: 50%;
-  text-align: center;
-  background-color: #666;
-  border-radius: 0px 0px 4px 4px;
-}
-
-/* Responsive layout - when the screen is less than 650px wide,
- make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 650px) {
-  .col {
-    width: 100%;
-    margin-top: 0;
-  }
-  /* hide the vertical line */
-  .vl {
     display: none;
-  }
-  /* show the hidden text on small screens */
-  .hide-md-lg {
-    display: block;
-    text-align: center;
-  }
-  .heading {
-    font-family: 'Lora', serif;
 }
+
+/* Shop Styling */
+
+.product-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    max-width: 300px;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
+    margin: 30px;
+}
+
+.image-container img {
+    width: auto;
+}
+
+.product-card-footer {
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.product-card-footer .button {
+    margin: 0 0 0 10px;
+    height: 100%;
+}
+
+.image-container {
+    max-height: 350px;
+}
+
+.product-card-title {
+    padding: 0 10px;
+    margin: auto 0;
+}
+
+/* Designer Styling */
+
+input[type="file"] {
+    display: none;
+}
+
+.design-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.design-tool-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tshirt-holder {
+    position: relative;
+    width: 100%;
+}
+
+.bordered-image {
+    border: 5px solid #efefef;
+}
+
+.add-to-cart-big {
+    color: #fff !important;
+    border-color: #29a745 !important;
+    background: #28a745 !important;
+}
+
+.add-to-cart-big:hover {
+    color: #fff !important;
+    border-color: #7fc98f !important;
+    background: #7fc98f !important;
+}
+
+/* Login Form Styling */
+
+.access-code-input {
+    height: 50px;
+    text-align: center;
+    transition: border 0.5s;
+    padding: 10px;
+    border: 5px #ddd solid !important;
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+    transform: translateY(-0.5rem);
+}
+
+.access-code-input:focus {
+    outline: none;
+    border: 5px #267dce solid !important;
+}
+
+.validate {
+    border: 5px #267dce solid !important;
+}
+
+.success {
+    border: 5px #2eec96 solid !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='45px' height='34px' viewBox='0 0 45 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center right;
+    background-origin: content-box;
+}
+
+.error {
+    border: 5px #f00 solid !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='30px' height='30px' viewBox='0 0 30 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-128.000000, -59.000000%29' fill='%23F44336'%3E%3Cpolygon points='157.848404 61.9920213 145.980053 73.8603723 157.848404 85.7287234 154.856383 88.7207447 142.988032 76.8523936 131.119681 88.7207447 128.12766 85.7287234 139.996011 73.8603723 128.12766 61.9920213 131.119681 59 142.988032 70.8683511 154.856383 59'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center right;
+    background-origin: content-box;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    font-size: var(--font-size-small);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown+label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-now-container {
+    width: 100%;
+}
+
+.signup-now-container::before {
+    content: '';
+    display: block;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 25%;
+    border-top: 1px solid #999;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 400px) {
+    .login-container {
+        min-width: 300px;
+    
+    }
+}
+
+/* Contact Page Styling */
+
+.contact {
+    margin-top: 5vh;
+    text-align: justify;
+}
+
+.map {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background: none !important;
+    text-align: right;
+}
+
+/* Reviews Styling */
+
+.review-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.review-card {
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    background: #fff;
+    margin: 30px;
+    flex-direction: row;
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.review-image-container img {
+    width: 65%;
+}
+
+.review {
+    margin: 10px 0;
+    /* width: 100%; */
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.review .button {
+    margin: 0 0 0 10px;
+    height: 100%;
+}
+
+.review-image-container {
+    /* max-height: 350px; */
+    margin: 30px 0;
+}
+
+.review-card-title {
+    padding: 0 10px;
+    margin: auto 0;
+}
+
+@media (max-width: 550px) {
+    .review-image-container img {
+        width: 35%;
+    }
+
+    .review-card {
+        flex-wrap: wrap;
+    }
+}
+
+/* FAQ Styling */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-collapse .active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-collapse .active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Newsletter Bar Styling */
+
+.newsletter-bar {
+    z-index: 5;
+    width: 100%;
+    height: 50px;
+    padding: 11px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .05);
+}
+
+.newsletter-bar > div {
+    margin: 0 10px;
+}
+
+.newsletter-email-input {
+    height: 40px;
+    text-align: center;
+    transition: border 0.5s;
+    padding: 7px;
+    border: 2px #ddd solid !important;
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+    transform: translateY(-0.5rem);
+}
+
+.newsletter-email-input:focus {
+    outline: none;
+    border: 2px #267dce solid !important;
+}
+
+.bar-close-button {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    cursor: pointer;
 }
 
 
@@ -783,7 +1066,6 @@ input[type=submit]:hover {
     .vertical-center {
         display: block;
     }
-
     .menu-mobile {
         display: inline-flex !important;
     }
@@ -792,13 +1074,12 @@ input[type=submit]:hover {
 /* For phablet (also point when grid becomes active) */
 
 @media (max-width: 550px) {
-    .vertical-center-column, .vertical-center-row {
+    .vertical-center-column,
+    .vertical-center-row {
         display: block;
     }
 }
 
 /* For tablet */
 
-@media (min-width: 1024px) {
-
-}
+@media (min-width: 1024px) {}

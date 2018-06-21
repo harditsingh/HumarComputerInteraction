@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adam &amp; Aoki | Home</title>
+    <title>Adam &amp; Aoki | About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/skeleton.css">
@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/shortcuts/inview.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
+    <script src="js/designer.js"></script>
 </head>
 
 <body>
@@ -161,7 +161,7 @@
 
                     </div>
                     <div class="title-container medium">
-                        Contact
+                        Design your own T-Shirt
                     </div>
                 </div>
             </div>
@@ -173,29 +173,36 @@
             </div>
         </div>
     </section>
-    <section class="content" id="first-container">
+
+    <section class="content high" id="first-container">
         <div class="container">
             <div class="row vertical-center-row">
-                <div class="six columns">
-                    <address class="extra-small">Welkweg 45a
-                        <br> 1023 AK Amsterdam
-                        <br> The Netherlands</address>
-                    <phone class="extra-small">+91 9811 099822</phone>
-                    <div class="extra-small">info@adamaoki.com</div>
+                <div class="seven columns">
+                    <div class="tshirt-holder">
+                        <img src="img/plain-tshirt.jpg" alt="" class="bordered-image">
+                        <div class="design-overlay">
+                            <img src="" id="design-image">
+                        </div>
+                    </div>
                 </div>
-                <div class="six columns">
-                    <p>If you have questions about your order or need any general information our customer service team will
-                        be happy to assist you.</p>
-                    <p>Send us your feedback: it is always important to us.</p>
-
+                <div class="five columns">
+                    <div class="design-tool-description">
+                        <h1>Choose a design!</h1>
+                        <p>We know how kids can be, they always want stuff with their favorite cartoon on it. And that's exactly
+                            why we provide you the opportunity to kill two birds with one stone.</p>
+                        <div class="button-holder full-width">
+                            <div class="button full-width" id="upload-button">
+                                Select a file
+                                <input type="file" id="file-upload" />
+                            </div>
+                            <div class="button add-to-cart-big full-width cart">
+                                Add To Cart
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="content">
-        <iframe class="map" src="https://maps.google.com/maps?q=vrije%20universiteit%20amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </section>
 
     <footer class="footer">
