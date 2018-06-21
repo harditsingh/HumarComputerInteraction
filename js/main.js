@@ -15,6 +15,17 @@ function main() {
         })
     }
 
+    if(document.getElementById("progress-bar") != null) {
+        document.getElementById("progress-bar").style.width = "100%";
+    }
+
+    if(document.getElementById("loading-message") != null) {
+        let element = document.getElementById("loading-message");
+        element.style.transform = "translateY(0px)";
+        element.style.opacity = "1";
+    }
+
+    setTimeout(hideLoadFrame, 4000);
     addAccordionListeners();
     addCartListeners();
 }
@@ -50,6 +61,10 @@ function addToCart() {
         let amount = parseInt(cartCounts[i].innerHTML);
         cartCounts[i].innerHTML = amount + 1;
     }
+}
+
+function hideLoadFrame() {
+    document.getElementById("loading-container").style.display = "none";
 }
 
 window.addEventListener("load", main)
