@@ -9,9 +9,11 @@ function main() {
         }
     });
 
-    document.getElementById("newsletter-bar-close").addEventListener('click', function() {
-        document.getElementById("newsletter-bar").style.display = "none";
-    })
+    if (document.getElementById("newsletter-bar-close") != null) {
+        document.getElementById("newsletter-bar-close").addEventListener('click', function () {
+            document.getElementById("newsletter-bar").style.display = "none";
+        })
+    }
 
     addAccordionListeners();
     addCartListeners();
@@ -19,19 +21,19 @@ function main() {
 
 function addAccordionListeners() {
     var acc = document.getElementsByClassName("accordion");
-        var i;
+    var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
 }
 
 function addCartListeners() {
