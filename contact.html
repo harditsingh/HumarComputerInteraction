@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/skeleton.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/shortcuts/inview.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/shortcuts/inview.min.js"></script>
+    <script src="js/script.js"></script>
 
 </head>
 
@@ -104,7 +104,7 @@
 
                         </nav>
                         <div class="cart-icon">
-                            <div class="cart-count">3</div>
+                            <div class="cart-count">1</div>
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
                             </a>
                         </nav>
                         <div class="cart-icon">
-                            <div class="cart-count">3</div>
+                            <div class="cart-count">1</div>
                         </div>
                     </div>
                 </div>
@@ -153,6 +153,7 @@
         </div>
     </section>
 
+    <!-- HEADER -->
     <section class="landing">
         <div class="landing-container page-heading vertical-center-column desktop">
             <div class="main-wrapper">
@@ -173,41 +174,59 @@
             </div>
         </div>
     </section>
+
+    <!-- CONTENT -->
     <section class="content" id="first-container">
         <div class="container">
             <div class="row vertical-center-row">
+                <!-- THE COMPANY'S ADDRESS, PHONE NUMBER AND EMAIL ADDRESS -->
                 <div class="six columns">
-                    <address class="extra-small">Welkweg 45a
+                    <p class="extra-small">Welkweg 45a
                         <br> 1023 AK Amsterdam
-                        <br> The Netherlands</address>
-                    <phone class="extra-small">+91 9811 099822</phone>
+                        <br> The Netherlands</p>
+                    <p class="extra-small">+91 9811 099822</p>
                     <div class="extra-small">info@adamaoki.com</div>
                 </div>
+                <!-- INFO ABOUT CONTACT -->
                 <div class="six columns">
                     <p>If you have questions about your order or need any general information our customer service team will
                         be happy to assist you.</p>
                     <p>Send us your feedback: it is always important to us.</p>
-
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve column" id="contact-form-column">
+                  <!-- CONTACT FORM-->
+                  <form class="contact-form" name="contact-form">
+                      <div class="contact-form-label">name:</div><input class="contact-form-input" type="text" name="name" placeholder="your name"><br>
+                      <div class="contact-form-label">email:</div><input class="contact-form-input" type="text" name="email" placeholder="your email"><br>
+                      <div class="contact-form-label">message:</div><input class="contact-form-input" id="contact-form-message" type="text" name="message" placeholder="your message"><br>
+                      <input type="submit" id="contact-form-submit-button" value="submit">
+                  </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- MAP (current address: address of the university) -->
     <section class="content">
-        <iframe class="map" src="https://maps.google.com/maps?q=vrije%20universiteit%20amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <iframe class="map" src="https://maps.google.com/maps?q=vrije%20universiteit%20amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row vertical-center-row">
                 <div class="one-third column">
+                    <!-- A&A LOGO -->
                     <div class="logo-container"></div>
+                    <!-- COPYRIGHT INFO -->
                     <div class="footer-container">
                         &copy; 2018 Adam &amp; Aoki
                     </div>
                 </div>
                 <div class="one-third column">
+                    <!-- MIDDLE LINKSET -->
                     <div class="footer-heading">
                         Linkset One
                     </div>
@@ -224,6 +243,7 @@
                     </ul>
                 </div>
                 <div class="one-third column">
+                    <!-- RIGHT LINKSET -->
                     <div class="footer-heading">
                         Linkset Two
                     </div>
@@ -244,5 +264,46 @@
     </footer>
 
 </body>
+
+
+<style>
+
+.map {
+  border: 0;
+}
+
+.contact-form {
+  margin-top: 10vh;
+}
+
+.contact-form-label {
+  width: 8%;
+  display: inline-block;
+  padding-right: 3vmin;
+  text-align: right;
+}
+
+.contact-form-input {
+  width: 40%;
+}
+
+#contact-form-message {
+  height: 30vh;
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact-form-label {
+    margin-left: 10%;
+    display: block;
+  }
+
+  .contact-form-input {
+    width: 80%;
+  }
+
+}
+
+</style>
 
 </html>
