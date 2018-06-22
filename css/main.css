@@ -701,8 +701,20 @@ nav a:focus {
     margin-bottom: 3vh;
 }
 
-#hidden-discussion {
+.hidden-discussion {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .discussion-new-comment {
+    margin-right: 0;
+  }
+
+  .discussion-comment {
+    margin-right: 0;
+  }
+
 }
 
 /* Shop Styling */
@@ -880,7 +892,7 @@ input:placeholder-shown+label {
 @media (min-width: 400px) {
     .login-container {
         min-width: 300px;
-    
+
     }
 }
 
@@ -897,6 +909,39 @@ input:placeholder-shown+label {
     overflow: hidden;
     background: none !important;
     text-align: right;
+    border: 0;
+}
+
+.contact-form {
+  margin-top: 10vh;
+}
+
+.contact-form-label {
+  width: 8%;
+  display: inline-block;
+  padding-right: 3vmin;
+  text-align: right;
+}
+
+.contact-form-input {
+  width: 40%;
+}
+
+#contact-form-message {
+  height: 30vh;
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact-form-label {
+    margin-left: 10%;
+    display: block;
+  }
+
+  .contact-form-input {
+    width: 80%;
+  }
+
 }
 
 /* Reviews Styling */
