@@ -179,12 +179,12 @@
     <section class="content" id="first-container">
         <div class="container">
             <div class="row vertical-center-row">
-                <!-- THE COMPANY'S ADDRESS? PHONE NUMBER AND EMAIL ADDRESS -->
+                <!-- THE COMPANY'S ADDRESS, PHONE NUMBER AND EMAIL ADDRESS -->
                 <div class="six columns">
-                    <address class="extra-small">Welkweg 45a
+                    <p class="extra-small">Welkweg 45a
                         <br> 1023 AK Amsterdam
-                        <br> The Netherlands</address>
-                    <phone class="extra-small">+91 9811 099822</phone>
+                        <br> The Netherlands</p>
+                    <p class="extra-small">+91 9811 099822</p>
                     <div class="extra-small">info@adamaoki.com</div>
                 </div>
                 <!-- INFO ABOUT CONTACT -->
@@ -194,13 +194,23 @@
                     <p>Send us your feedback: it is always important to us.</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="twelve column" id="contact-form-column">
+                  <!-- CONTACT FORM-->
+                  <form class="contact-form" name="contact-form">
+                      <div class="contact-form-label">name:</div><input class="contact-form-input" type="text" name="name" placeholder="your name"><br>
+                      <div class="contact-form-label">email:</div><input class="contact-form-input" type="text" name="email" placeholder="your email"><br>
+                      <div class="contact-form-label">message:</div><input class="contact-form-input" id="contact-form-message" type="text" name="message" placeholder="your message"><br>
+                      <input type="submit" id="contact-form-submit-button" value="submit">
+                  </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- MAP (current address: address of the university) -->
     <section class="content">
-        <iframe class="map" src="https://maps.google.com/maps?q=vrije%20universiteit%20amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <iframe class="map" src="https://maps.google.com/maps?q=vrije%20universiteit%20amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </section>
 
     <!-- FOOTER -->
@@ -254,5 +264,46 @@
     </footer>
 
 </body>
+
+
+<style>
+
+.map {
+  border: 0;
+}
+
+.contact-form {
+  margin-top: 10vh;
+}
+
+.contact-form-label {
+  width: 8%;
+  display: inline-block;
+  padding-right: 3vmin;
+  text-align: right;
+}
+
+.contact-form-input {
+  width: 40%;
+}
+
+#contact-form-message {
+  height: 30vh;
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact-form-label {
+    margin-left: 10%;
+    display: block;
+  }
+
+  .contact-form-input {
+    width: 80%;
+  }
+
+}
+
+</style>
 
 </html>
