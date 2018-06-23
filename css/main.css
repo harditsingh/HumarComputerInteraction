@@ -630,8 +630,12 @@ nav a:focus {
 
 /* Discussion Styles */
 
+.no-padding {
+    padding: 0;
+}
+
 #discussion-search {
-  display: block;
+    margin-left: 65vh;
 }
 
 .discussion {
@@ -716,13 +720,25 @@ nav a:focus {
 
 @media only screen and (max-width: 600px) {
 
-  .discussion-new-comment {
-    margin-right: 0;
-  }
+    #discussion-search {
+        margin-left: 0;
+    }
 
-  .discussion-comment {
-    margin-right: 0;
-  }
+    #discussion-search .search-container {
+        width: 100%;
+    }
+
+    #discussion-search input {
+        width: 90%;
+    }
+
+    .discussion-new-comment {
+        margin-right: 0;
+    }
+
+    .discussion-comment {
+        margin-right: 0;
+    }
 
 }
 
