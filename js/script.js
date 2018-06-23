@@ -18,7 +18,6 @@ function alterDiscussion() {
   else if (document.getElementById("read-more-button").className === "read-less-button") {
     readLess();
   }
-
 }
 
 /**
@@ -26,7 +25,13 @@ function alterDiscussion() {
  */
 function readMore() {
   document.getElementById("read-more-button").className = "read-less-button";
-  document.getElementById("hidden-discussion").style.display = "block";
+  
+  var reviews = document.getElementsByClassName("hidden-discussion");
+  for(var i = 0; i < reviews.length; i++)
+  {
+    document.getElementsByClassName("hidden-discussion")[i].style.display = "block";
+  }
+
   document.getElementById("read-more-button").innerHTML = "read less";
 }
 
@@ -35,6 +40,12 @@ function readMore() {
  */
 function readLess() {
   document.getElementById("read-more-button").className = "read-more-button";
-  document.getElementById("hidden-discussion").style.display = "none";
+    
+  var reviews = document.getElementsByClassName("hidden-discussion");
+  for(var i = 0; i < reviews.length; i++)
+  {
+    document.getElementsByClassName("hidden-discussion")[i].style.display = "none";
+  }
+
   document.getElementById("read-more-button").innerHTML = "read more";
 }
