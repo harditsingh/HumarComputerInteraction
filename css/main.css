@@ -511,11 +511,11 @@ nav a:focus {
     border: 2px #454545 solid;
     transition: border 0.5s, background 0.5s;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
 }
 
 .search-container:focus-within {
     border: 2px #267dce solid;
-    background: #fff;
 }
 
 .search-container input[type="text"] {
