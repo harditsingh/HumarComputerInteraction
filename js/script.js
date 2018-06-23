@@ -1,11 +1,3 @@
-// $(function() {
-//   $('#slideshow').waypoint(function(direction) {
-//     $('.scrolling').toggleClass("active");
-//   }, {
-//     offset: '0%'
-//   });
-// });
-
 $(function () {
   $('#first-container').waypoint(function (direction) {
     $('.scrolling').toggleClass("active");
@@ -14,33 +6,35 @@ $(function () {
   });
 });
 
+/* Discussion JS */
 
-/* READ MORE BUTTON ON THE DISCUSSION PAGE */
+/**
+ * Open/Close hidden part of the discussion
+ */
+function alterDiscussion() {
+  if (document.getElementById("read-more-button").className === "read-more-button") {
+    readMore();
+  }
+  else if (document.getElementById("read-more-button").className === "read-less-button") {
+    readLess();
+  }
 
-function main() {
-  document.getElementById("read-more-button").addEventListener("click", readMore);
 }
 
-window.addEventListener("load", main);
-
+/**
+ * Open full discussion board when clicked on Read More
+ */
 function readMore() {
-  document.getElementById("read-more-button").style.display = "none";
-  var x = document.getElementsByClassName("hidden-discussion")
-  x[0].style.display = "block";
-  x[1].style.display = "block";
-  /* the original try with a ReadMore / ReadLess combination */
-  /*var x = document.getElementById("read-more-button");
-  if (x.className === "read-more-button") {
-      x.className = "read-less-button";
-      var y = document.getElementsByClassName("hidden-discussion")
-      y[0].style.display = "block";
-      y[1].style.display = "block";
-      x.innerHTML = "read less";
-  } else if (x.className === "read-less-button") {
-      x.className = "read-more-button";
-      var y = document.getElementsByClassName("hidden-discussion")
-      y[0].style.display = "none";
-      y[1].style.display = "none";
-      x.innerHTML = "read more";
-  }*/
+  document.getElementById("read-more-button").className = "read-less-button";
+  document.getElementById("hidden-discussion").style.display = "block";
+  document.getElementById("read-more-button").innerHTML = "read less";
+}
+
+/**
+ * Close most of the discussion board when clicked on Read Less
+ */
+function readLess() {
+  document.getElementById("read-more-button").className = "read-more-button";
+  document.getElementById("hidden-discussion").style.display = "none";
+  document.getElementById("read-more-button").innerHTML = "read more";
 }
