@@ -1,11 +1,3 @@
-// $(function() {
-//   $('#slideshow').waypoint(function(direction) {
-//     $('.scrolling').toggleClass("active");
-//   }, {
-//     offset: '0%'
-//   });
-// });
-
 $(function () {
   $('#first-container').waypoint(function (direction) {
     $('.scrolling').toggleClass("active");
@@ -14,8 +6,8 @@ $(function () {
   });
 });
 
-
 /* Discussion JS */
+
 /**
  * Open/Close hidden part of the discussion
  */
@@ -26,6 +18,7 @@ function alterDiscussion() {
   else if (document.getElementById("read-more-button").className === "read-less-button") {
     readLess();
   }
+
 }
 
 /**
