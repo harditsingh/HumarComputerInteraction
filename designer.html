@@ -17,8 +17,12 @@
 </head>
 
 <body>
+    <!-- Top bar: logo; search bar; menu;
+         Landing: Title of current webpage
+    ************************************************************* -->
     <section class="menu-container">
         <h2 class="hidden-header">menu</h2>
+        <!-- Menu for mobile -->
         <div class="mobile">
             <div class="menu-popup" id="popup">
                 <nav class="cl-effect-9">
@@ -45,10 +49,14 @@
                 </nav>
             </div>
         </div>
+        <!-- Menu on mobile stays in the bottom of the screen 
+             Contains: logo; search; cart; menu -->
         <div class="menu-mobile mobile">
+            <!-- Logo acts like a Home button -->
             <a href="index.html">
                 <div class="logo-container"></div>
             </a>
+            <!-- Place search bar and icon -->
             <div class="search-button">
                 <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
                     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
@@ -56,19 +64,24 @@
                     <path d="M0 0h24v24H0z" fill="none" />
                 </svg>
             </div>
+            <!-- Place cart icon -->
             <div class="cart-icon">
                 <div class="cart-count">3</div>
             </div>
+            <!-- Place menu -->
             <div class="hamburger" id="menu-toggle"></div>
 
 
         </div>
+        <!-- Menu on desktop is always at the top -->
         <div class="static-top-menu-desktop desktop">
             <div class="top-bar">
                 <div class="static">
+                    <!-- Logo acts like a Home button -->
                     <a href="index.html">
                         <div class="logo-container"></div>
                     </a>
+                    <!-- Place search bar and icon -->
                     <div class="search-container">
                         <input type="text" placeholder="Search">
                         <div class="search-button">
@@ -79,6 +92,7 @@
                             </svg>
                         </div>
                     </div>
+                    <!-- Place menu -->
                     <div class="nav-container">
 
                         <nav class="cl-effect-9">
@@ -104,6 +118,7 @@
                             </a>
 
                         </nav>
+                        <!-- Place cart icon -->
                         <div class="cart-icon">
                             <div class="cart-count">3</div>
                         </div>
@@ -154,6 +169,8 @@
         </div>
     </section>
 
+    <!-- Designer page Title 
+    ************************************************************* -->
     <section class="landing">
         <h2 class="hidden-header">header</h2>
         <div class="landing-container-steps page-heading vertical-center-column desktop">
@@ -168,7 +185,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- About title on mobile -->
         <div class="landing-container-steps page-heading mobile">
             <div class="landing-background">
 
@@ -176,6 +193,8 @@
         </div>
     </section>
 
+    <!-- This section is for the user's creativity to design his favorite t-shirt and purchase it
+     ************************************************************* -->
     <section class="content high" id="first-container">
         <div class="container">
             <div class="row vertical-center-row">
@@ -207,6 +226,7 @@
         </div>
     </section>
 
+    <!-- Footer: Copyright. Extra Links. -->
     <footer class="footer">
         <div class="container">
             <div class="row vertical-center-row">
