@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adam &amp; Aoki | About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" href="css/skeleton.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/shortcuts/inview.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/shortcuts/inview.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </head>
 
@@ -21,11 +26,12 @@
          Landing: Title of current webpage
     ************************************************************* -->
     <section class="menu-container">
-        <h2 class="hidden-header">menu</h2>
-        <!-- Menu for mobile -->
         <div class="mobile">
-            <div class="menu-popup" id="popup">
-                <nav class="cl-effect-9">
+            <div class="menu-popup" id="mobile-popup">
+                <a href="login.html">
+                    <div class="login-avatar"></div>
+                </a>
+                <nav class="navbar">
                     <a href="shop.html">
                         <span>Shop</span>
                         <span>Buy, buy!</span>
@@ -48,121 +54,163 @@
                     </a>
                 </nav>
             </div>
-        </div>
-        <!-- Menu on mobile stays in the bottom of the screen 
-             Contains: logo; search; cart; menu -->
-        <div class="menu-mobile mobile">
-            <!-- Logo acts like a Home button -->
-            <a href="index.html">
-                <div class="logo-container"></div>
-            </a>
-            <!-- Place search bar and icon -->
-            <div class="search-button">
-                <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                    />
-                    <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
-            </div>
-            <!-- Place cart icon -->
-            <div class="cart-icon">
-                <div class="cart-count">3</div>
-            </div>
-            <!-- Place menu -->
-            <div class="hamburger" id="menu-toggle"></div>
-
-
-        </div>
-        <!-- Menu on desktop is always at the top -->
-        <div class="static-top-menu-desktop desktop">
-            <div class="top-bar">
-                <div class="static">
-                    <!-- Logo acts like a Home button -->
-                    <a href="index.html">
-                        <div class="logo-container"></div>
-                    </a>
-                    <!-- Place search bar and icon -->
-                    <div class="search-container">
-                        <input type="text" placeholder="Search">
-                        <div class="search-button">
-                            <svg class="search-icon" viewBox="0 0 24 24">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Place menu -->
-                    <div class="nav-container">
-
-                        <nav class="cl-effect-9">
-                            <a href="shop.html">
-                                <span>Shop</span>
-                                <span>Buy, buy!</span>
-                            </a>
-                            <a href="about.html">
-                                <span>About Us</span>
-                                <span>Who are we?</span>
-                            </a>
-                            <a href="discussion.html">
-                                <span>Discussion</span>
-                                <span>Let's talk</span>
-                            </a>
-                            <a href="faq.html">
-                                <span>FAQ</span>
-                                <span>FAQ</span>
-                            </a>
-                            <a href="contact.html">
-                                <span>Contact</span>
-                                <span>Come, see us?</span>
-                            </a>
-
-                        </nav>
-                        <!-- Place cart icon -->
-                        <div class="cart-icon">
-                            <div class="cart-count">3</div>
-                        </div>
-                    </div>
-
-
-
+            <div class="static">
+                <a href="index.html">
+                    <div class="logo-container"></div>
+                </a>
+                <div class="search-button">
+                    <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
                 </div>
-                <div class="scrolling">
-                    <a href="index.html">
-                        <div class="logo-container"></div>
-                    </a>
-                    <div class="search-container">
-                        <input type="text" placeholder="Search">
-                        <div class="search-button">
-                            <svg class="search-icon" viewBox="0 0 24 24">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="nav-container">
+                <div class="cart-icon">
+                    <div class="cart-count">3</div>
+                </div>
+                <div class="mobile-menu-toggle"></div>
 
-                        <nav class="cl-effect-9">
-                            <a href="shop.html">
-                                <span>Shop</span>
-                            </a>
-                            <a href="about.html">
-                                <span>About Us</span>
-                            </a>
-                            <a href="discussion.html">
-                                <span>Discussion</span>
-                            </a>
-                            <a href="faq.html">
-                                <span>FAQ</span>
-                            </a>
-                            <a href="contact.html">
-                                <span>Contact</span>
-                            </a>
-                        </nav>
+            </div>
+            <div class="scrolling">
+                <a href="index.html">
+                    <div class="logo-container"></div>
+                </a>
+                <div class="search-button">
+                    <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </div>
+                <div class="cart-icon">
+                    <div class="cart-count">3</div>
+                </div>
+                <div class="mobile-menu-toggle"></div>
+
+            </div>
+        </div>
+
+        <div class="desktop">
+            <div class="menu-popup" id="desktop-popup">
+                <nav class="navbar">
+                    <a href="shop.html">
+                        <span>Shop</span>
+                        <span>Buy, buy!</span>
+                    </a>
+                    <a href="about.html">
+                        <span>About Us</span>
+                        <span>Who are we?</span>
+                    </a>
+                    <a href="discussion.html">
+                        <span>Discussion</span>
+                        <span>Let's talk</span>
+                    </a>
+                    <a href="faq.html">
+                        <span>FAQ</span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="contact.html">
+                        <span>Contact</span>
+                        <span>Come, see us?</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="static">
+                <a href="index.html">
+                    <div class="logo-container"></div>
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <div class="search-button">
+                        <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <nav class="navbar">
+                        <a href="shop.html">
+                            <span>Shop</span>
+                            <span>Buy, buy!</span>
+                        </a>
+                        <a href="about.html">
+                            <span>About Us</span>
+                            <span>Who are we?</span>
+                        </a>
+                        <a href="discussion.html">
+                            <span>Discussion</span>
+                            <span>Let's talk</span>
+                        </a>
+                        <a href="faq.html">
+                            <span>FAQ</span>
+                            <span>FAQ</span>
+                        </a>
+                        <a href="contact.html">
+                            <span>Contact</span>
+                            <span>Come, see us?</span>
+                        </a>
+                    </nav>
+                    <a href="#">
+                        <div class="desktop-menu-toggle">
+                    </a>
+
+                    </div>
+                    <div class="cart-avatar-container">
                         <div class="cart-icon">
                             <div class="cart-count">3</div>
                         </div>
+                        <a href="login.html">
+                            <div class="login-avatar"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scrolling">
+                <a href="index.html">
+                    <div class="logo-container"></div>
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <div class="search-button">
+                        <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <nav class="navbar">
+                        <a href="shop.html">
+                            <span>Shop</span>
+                        </a>
+                        <a href="about.html">
+                            <span>About Us</span>
+                        </a>
+                        <a href="discussion.html">
+                            <span>Discussion</span>
+                        </a>
+                        <a href="faq.html">
+                            <span>FAQ</span>
+                        </a>
+                        <a href="contact.html">
+                            <span>Contact</span>
+                        </a>
+                    </nav>
+                    <a href="#">
+                        <div class="desktop-menu-toggle">
+                    </a>
+
+                    </div>
+                    <div class="cart-avatar-container">
+                        <div class="cart-icon">
+                            <div class="cart-count">3</div>
+                        </div>
+                        <a href="login.html">
+                            <div class="login-avatar"></div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -172,30 +220,22 @@
     <!-- The Shop Title 
     ************************************************************* -->
     <section class="landing">
-        <h2 class="hidden-header">header</h2>
-        <div class="landing-container-steps page-heading vertical-center-column desktop">
+        <div class="steps-background page-heading vertical-center-column">
             <div class="main-wrapper">
                 <div class="inner-wrapper">
                     <div class="message-container italic light">
-
                     </div>
-                    <div class="title-container medium">
-                        The Shop
-                    </div>
+                    <h1 class="title-container medium">
+                        Shop
+                    </h1>
                 </div>
-            </div>
-        </div>
-
-        <div class="landing-container-steps page-heading mobile">
-            <div class="landing-background">
-
             </div>
         </div>
     </section>
 
     <!-- This section is for the user to add items to the cart 
     ************************************************************* -->
-    <section class="content high" id="first-container">
+    <section class="content" id="first-container">
         <div class="container vertical-center-column">
             <div class="row">
                 <div class="twelve columns">
@@ -272,6 +312,10 @@
 
     <!-- Footer: Copyright. Extra Links. -->
     <footer class="footer">
+        <div class="newsletter-bar desktop" id="newsletter-bar">
+            <div>We use cookies to improve your shopping experience.</div>
+            <div class="bar-close-button" id="newsletter-bar-close">X</div>
+        </div>
         <div class="container">
             <div class="row vertical-center-row">
                 <div class="one-third column">
@@ -279,42 +323,55 @@
                     <div class="footer-container">
                         &copy; 2018 Adam &amp; Aoki
                     </div>
-                </div>
-                <div class="one-third column">
                     <div class="footer-heading">
-                        Linkset One
+                        Sitemap
                     </div>
                     <ul class="no-style">
                         <li>
-                            <a>Something</a>
+                            <a href="shop.html">Shop</a>
                         </li>
                         <li>
-                            <a>Something Else</a>
+                            <a href="faq.html">FAQ</a>
                         </li>
                         <li>
-                            <a>Something More</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="one-third column">
+                    <div class="newsletter-form-container">
+                        <div class="footer-heading">
+                            Subscribe to the Newsletter
+                        </div>
+                        <ul class="no-style">
+                            <li>
+                                <div>
+                                    <input type="text" class="newsletter-email-input" id="username" placeholder="E-Mail">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button inverted-button full-width">Submit</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-third column">
                     <div class="footer-heading">
-                        Linkset Two
+                        Follow Us
                     </div>
                     <ul class="no-style">
                         <li>
-                            <a>Something</a>
-                        </li>
-                        <li>
-                            <a>Something Else</a>
-                        </li>
-                        <li>
-                            <a>Something More</a>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                            <a href="#" class="fa fa-instagram"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </body>
 

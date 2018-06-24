@@ -143,11 +143,10 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 .footer-heading {
   font-size: 14px;
   font-weight: 600;
-  line-height: 38px;
+  margin-bottom: 10px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
-  white-space: nowrap;
 }
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -290,6 +289,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
 textarea,
 select {
   height: 38px;
@@ -307,6 +307,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -322,6 +323,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
+input[type="date"]:focus,
 textarea:focus,
 select:focus {
   outline: none; }
