@@ -1011,8 +1011,6 @@ input[type="file"] {
 }
 
 label {
-    position: absolute;
-    top: 0;
     font-size: var(--font-size-small);
     opacity: 1;
     transform: translateY(0);
