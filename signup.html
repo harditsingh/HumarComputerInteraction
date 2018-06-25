@@ -245,72 +245,74 @@
                     <h3>Create your account</h3>
 
                     <div class="input-container">
-                        <div class="label">First Name*: </div>
+                        <label for="firstname">First Name*: </label>
                         <input type="text" class="form-input" id="firstname" placeholder="First Name">
                     </div>
                     <div class="input-container">
-                        <div class="label">Last Name*: </div>
+                        <label for="lastname">Last Name*: </label>
                         <input type="text" class="form-input" id="lastname" placeholder="Last Name">
                     </div>
                     <div class="input-container">
-                        <div class="label">E-Mail*: </div>
+                        <label for="email">E-Mail*: </label>
                         <input type="text" class="form-input" id="email" placeholder="E-Mail">
                     </div>
                     <div class="input-container">
-                        <div class="label">Confirm Email*: </div>
+                        <label for="cnfmemail">Confirm Email*: </label>
                         <input type="text" class="form-input" id="cnfmemail" placeholder="Confirm Email">
                     </div>
 
                     <div class="input-container">
-                        <div class="label">Gender*: </div>
-                        <select class="form-input">
+                        <label for="gender-dropdown">Gender*: </label>
+                        <select class="form-input" id="gender-dropdown">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="Prefer not to say">Prefer not to say</option>
                         </select>
                     </div>
                     <div class="input-container">
-                        <div class="label">Date of birth*: </div>
+                        <label for="dob">Date of birth*: </label>
                         <input type="date" class="form-input" id="dob">
                     </div>
                     <div class="input-container">
-                        <div class="label">Username*: </div>
+                        <label for="username">Username*: </label>
                         <input type="text" class="form-input" id="username" placeholder="Username">
                     </div>
                     <div class="input-container">
-                        <div class="label">Password*: </div>
+                        <label for="password">Password*: </label>
                         <input type="password" class="form-input" id="password" placeholder="5-10 letters">
                     </div>
                     <div class="input-container">
-                        <div class="label">Confirm password*: </div>
-                        <input type="password" class="form-input" id="confmpwd" placeholder="Confirm password">
+                        <label for="cnfmpwd">Confirm password*: </label>
+                        <input type="password" class="form-input" id="cnfmpwd" placeholder="Confirm password">
                     </div>
 
 
                     <h3>Address details</h3>
 
                     <div class="input-container">
-                        <div class="label">Street Name*: </div>
+                        <label for="strtname">Street Name*: </label>
                         <input type="text" class="form-input" id="strtname" placeholder="Street Name">
                     </div>
                     <div class="input-container">
-                        <div class="label">House No.*: </div>
+                        <label for="houseno">House No.*: </label>
                         <input type="text" class="form-input" id="houseno" placeholder="House Number">
                     </div>
                     <div class="input-container">
-                        <div class="label">Postcode*: </div>
+                        <label for="postcode">Postcode*: </label>
                         <input type="text" pattern="[0-9]{4}[a-zA-Z]{2}" class="form-input" id="postcode" placeholder="1234AB">
                     </div>
                     <div class="input-container">
-                        <div class="label">Province*: </div>
+                        <label for="province">Province*: </label>
                         <input type="text" class="form-input" id="province" placeholder="Province">
                     </div>
                     <div class="input-container">
-                        <div class="label">Country*: </div>
+                        <label for="country">Country*: </label>
                         <input type="text" class="form-input" id="country" placeholder="Country">
                     </div>
 
-                    <div class="button squared-button inverted-button">Submit</div>
+                    <a href="index.html">
+                        <div class="button squared-button inverted-button">Submit</div>
+                    </a>
                     <a href="signup.html">
                         <div class="button squared-button">Clear</div>
                     </a>
@@ -324,8 +326,8 @@
     <!-- Footer: Copyright. Extra Links. -->
     <footer class="footer">
         <div class="newsletter-bar desktop" id="newsletter-bar">
-            <div>We use cookies to improve your shopping experience.</div>
-            <div class="bar-close-button" id="newsletter-bar-close">X</div>
+            <div tabindex="1">We use cookies to improve your shopping experience.</div>
+            <div class="bar-close-button" id="newsletter-bar-close" tabindex="2">X</div>
         </div>
         <div class="container">
             <div class="row vertical-center-row">
