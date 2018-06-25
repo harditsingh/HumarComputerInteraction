@@ -1168,6 +1168,24 @@ input:placeholder-shown+label {
     transition: max-height 0.2s ease-out;
 }
 
+.landing-container-about {
+    width: 100%;
+    background: #FFC260;
+}
+
+.content-about {
+    min-height: 350px;
+    padding: 30px 50px;
+}
+
+.colour-gradient {
+    background: radial-gradient(#FFC260, #37ACF6);
+}
+
+.color-yellow {
+    background: #FFC260;
+}
+
 /* Cookie Bar Styling */
 
 .cookie-bar {
