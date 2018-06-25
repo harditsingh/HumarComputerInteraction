@@ -1362,7 +1362,6 @@ header .mobile {
 }
 
 .mobile .tagline-container div:last-child {
-    text-transform: uppercase;
     font-size: 33px;
     letter-spacing: -1px;
     font-weight: 500;
@@ -1411,7 +1410,6 @@ header .desktop {
 }
 
 .desktop .tagline-container div:last-child {
-    text-transform: uppercase;
     font-size: 53px;
     letter-spacing: -3px;
     font-weight: 500;
