@@ -31,9 +31,9 @@ function main() {
     }
 
 
-    if (document.getElementById("newsletter-bar-close") != null) {
-        document.getElementById("newsletter-bar-close").addEventListener('click', function () {
-            document.getElementById("newsletter-bar").style.display = "none";
+    if (document.getElementById("cookie-bar-close") != null) {
+        document.getElementById("cookie-bar-close").addEventListener('click', function () {
+            document.getElementById("cookie-bar").style.display = "none";
         })
     }
 
