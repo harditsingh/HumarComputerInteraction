@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+.hidden-label {
+    display: none;
+}
+
 img {
     width: 100%;
 }
