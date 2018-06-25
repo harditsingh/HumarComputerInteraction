@@ -844,6 +844,11 @@ img {
     border-left: 15px solid #ddd;
 }
 
+.discussion-label {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 .discussion-form {
     margin: 0;
 }
