@@ -1,3 +1,5 @@
+
+// This code segment is used to autoplay the gallery, courtesy: Slick Slider
 $(document).ready(function () {
   $('.index-slider').slick({
     autoplay: true,
@@ -35,6 +37,7 @@ $(document).ready(function () {
   });
 });
 
+// This code segment is used to detect the scroll position of the webpage to display the scrolling menu, courtesy: Waypoints
 $(function () {
   let offsetValue = '0%';
   if ($(document).width() < "560") {
